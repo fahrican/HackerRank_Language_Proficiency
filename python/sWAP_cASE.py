@@ -1,8 +1,5 @@
 def swap_case(s):
-    string_swap_case = ""
-    for character in s:
-        string_swap_case += character.swapcase()
-    return string_swap_case
+    return s.swapcase()
 
 
 if __name__ == '__main__':
