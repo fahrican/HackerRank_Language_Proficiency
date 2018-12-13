@@ -5,11 +5,11 @@ Designer Door Mat
 
 def print_dashes_or_parameter(logo_or_pattern):
     number_of_dashes = columns - len(logo_or_pattern)
-    half_of_number_of_dashes = (number_of_dashes / 2) - 1
+    half_of_number_of_dashes = number_of_dashes / 2
     for column in range(columns):
         if column < half_of_number_of_dashes:
             print("-", end="")
-        elif column == (half_of_number_of_dashes + 1):
+        elif column == half_of_number_of_dashes:
             print(logo_or_pattern, end="")
         elif column > number_of_dashes:
             break
